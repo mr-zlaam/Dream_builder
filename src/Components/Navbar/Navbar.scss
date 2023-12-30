@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 5rem;
+  padding: 1rem 2rem;
 }
 .logo > h1 {
   font-family: $font_logo;
@@ -24,7 +24,6 @@
 @media screen and (max-width: 325px) {
   .logo > h1 {
     font-size: 1rem;
-    margin-left: 10px;
   }
 }
 @media screen and (max-width: 250px) {
