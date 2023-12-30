@@ -34,6 +34,7 @@
     height: 100vh;
     width: 100vw;
     background: #00000085;
+    z-index: 10;
   }
   @mixin navlink_mobile_props {
     display: inline;
@@ -51,6 +52,7 @@
     height: 100vh;
     width: 16rem;
     overflow: hidden;
+    z-index: 11;
     & span {
       margin: 2rem 0;
       & a {
@@ -71,6 +73,8 @@
   .bars {
     display: inline;
     font-size: 30px;
+    position: relative;
+    z-index: 11;
   }
 }
 @media screen and (max-width: 10068px) and (max-height: 400px) {
