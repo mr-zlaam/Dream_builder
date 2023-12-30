@@ -11,6 +11,16 @@
   -webkit-box-shadow: -3px 7px 42px -7px #000000bf;
   -moz-box-shadow: -3px 7px 42px -7px #000000bf;
 }
+a {
+  text-decoration: none;
+}
+.invisible {
+  display: none;
+}
+.visible {
+  display: inline;
+}
+
 .btn {
   font-size: $font_normal;
   padding: 0.7rem 1.2rem;
@@ -30,12 +40,16 @@
     transition: all 0.2s ease-in-out;
   }
 }
-a {
-  text-decoration: none;
+@media screen and (max-width: 768px) {
+  .btn {
+    font-size: $font_sm;
+    font-weight: bold;
+    padding: 0.6rem 0.9rem;
+  }
 }
-.invisible {
-  display: none;
-}
-.visible {
-  display: inline;
+@media screen and (max-width: 325px) {
+  .btn {
+    font-size: 0.7rem;
+    padding: 10px;
+  }
 }

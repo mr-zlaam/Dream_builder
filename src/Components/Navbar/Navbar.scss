@@ -12,3 +12,22 @@
 .logo > h1 {
   font-family: $font_logo;
 }
+@media screen and (max-width: 768px) {
+  .main_header {
+    padding: 1rem 2rem;
+  }
+  .logo > h1 {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 325px) {
+  .logo > h1 {
+    font-size: 1rem;
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 250px) {
+  .main_header {
+    display: none;
+  }
+}
