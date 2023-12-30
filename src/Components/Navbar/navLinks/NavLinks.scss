@@ -1,0 +1,44 @@
+@import "../../../Variables_Styles/fonts.scss";
+@import "../../../Variables_Styles/variable.scss";
+.navLinks {
+  font-family: $font_regular;
+  font-weight: 400;
+  & a {
+    text-decoration: none;
+    margin: 0 2rem;
+    font-size: $font_normal;
+    transition: all 0.4s linear;
+    padding-bottom: 0.4rem;
+    &:hover {
+      transition: all 0.4s linear;
+      opacity: 0.7;
+      transition: all 0.4s linear;
+    }
+    &:focus {
+      border-bottom: 2px solid black;
+    }
+  }
+}
+
+// for smaller devices
+@media screen and (max-width: 1292px) {
+  .navLinks {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: $bg_color;
+    box-shadow: -3px 7px 42px -7px #000000bf;
+    -webkit-box-shadow: -3px 7px 42px -7px #000000bf;
+    -moz-box-shadow: -3px 7px 42px -7px #000000bf;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+    height: 100vh;
+    width: 16rem;
+    & a {
+      margin: 1.4rem 0;
+    }
+  }
+}

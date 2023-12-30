@@ -1,6 +1,6 @@
 import {} from "react";
 import { Link } from "react-router-dom";
-
+import "./NavLinks.scss";
 const NavLinks = () => {
   return (
     <>
