@@ -1,0 +1,15 @@
+@import "../../Variables_Styles/fonts.scss";
+.main_header {
+  height: 10vh;
+  background: red;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+}
+.logo > h1 {
+  font-family: $font_logo;
+}

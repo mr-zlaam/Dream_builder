@@ -1,9 +1,12 @@
 import {} from "react";
+import Parent from "./01_Parents/parent";
 
 const App = () => {
   return (
     <>
-      <div>app component</div>
+      <div>
+        <Parent />
+      </div>
     </>
   );
 };

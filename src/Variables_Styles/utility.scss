@@ -1,0 +1,12 @@
+@import "./variable.scss";
+.nav_shadow {
+  box-shadow: -3px 7px 23px 0px #000000bf;
+  -webkit-box-shadow: -3px 7px 23px 0px #000000bf;
+  -moz-box-shadow: -3px 7px 23px 0px #000000bf;
+  background: $bg_color;
+}
+.shadow {
+  box-shadow: -3px 7px 42px -7px #000000bf;
+  -webkit-box-shadow: -3px 7px 42px -7px #000000bf;
+  -moz-box-shadow: -3px 7px 42px -7px #000000bf;
+}
