@@ -1,2 +1,54 @@
 @import "../../Variables_Styles/fonts.scss";
 @import "../../Variables_Styles/variable.scss";
+
+.home_container {
+  background: red;
+}
+.hero_section {
+  height: fit-content;
+  background: blue;
+  background: url("https://live.staticflickr.com/65535/53430993781_7cd5c304f0_c.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  .text_div {
+    background: transparent;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & h1 {
+      font-size: $font_4xl;
+      text-align: center;
+      font-family: $font_ubuntu;
+      background: #ffffff4b;
+      backdrop-filter: blur(4px);
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .hero_section > .text_div > h1 {
+    font-size: $font_2xl;
+  }
+}
+@media screen and (max-width: 515px) {
+  .hero_section > .text_div > h1 {
+    font-size: $font_xl;
+    text-align: start;
+    padding: 0 1rem;
+  }
+}
+@media screen and (max-width: 345px) {
+  .hero_section > .text_div > h1 {
+    font-size: $font_lg;
+    text-align: start;
+    padding: 0 1rem;
+  }
+}
+@media screen and (max-width: 250px) {
+  .home_container {
+    visibility: hidden;
+    background: #fff;
+  }
+}
