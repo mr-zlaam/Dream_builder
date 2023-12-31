@@ -12,3 +12,17 @@
     -webkit-user-drag: none;
   }
 }
+::-webkit-scrollbar-track {
+  background: #80808083;
+  width: 50px;
+}
+::-webkit-scrollbar-thumb {
+  box-shadow: 2px 2px 4px #888888;
+
+  background-color: #fff;
+  width: 40px;
+  border-radius: 30px;
+}
+::-webkit-scrollbar {
+  height: 20px;
+}
