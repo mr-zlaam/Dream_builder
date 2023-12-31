@@ -23,9 +23,11 @@
       & h1 {
         color: $bg_color;
         font-family: $font_ubuntu;
+        width: fit-content;
       }
       & p {
         color: $bg_color;
+        width: fit-content;
         font-size: $font_normal;
         font-family: $font_ubuntu;
         transition: all 0.3s ease;
@@ -60,5 +62,45 @@
         color: white !important;
       }
     }
+  }
+}
+@media screen and (max-width: 368px) {
+  .footer_container > .footer_controller {
+    & .address {
+      width: fit-content;
+      margin: auto;
+      & h1 {
+        font-size: $font_normal;
+      }
+      & p {
+        font-size: $font_sm;
+      }
+    }
+    & .contact {
+      width: fit-content;
+      margin: auto;
+      & h1 {
+        font-size: $font_normal;
+      }
+      & p {
+        font-size: $font_sm;
+      }
+    }
+    & .footer_about {
+      width: fit-content;
+      margin: auto;
+
+      & p {
+        font-size: medium;
+        width: 230px;
+        margin: auto;
+      }
+    }
+  }
+}
+@media screen and (max-width: 250px) {
+  .footer_container {
+    visibility: hidden;
+    background: $bg_color;
   }
 }
