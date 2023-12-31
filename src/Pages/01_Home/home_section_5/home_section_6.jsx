@@ -14,22 +14,20 @@ const Home_section_5 = () => {
     <>
       <div className="home_section_5">
         <h1>{"FAQ'S"}</h1>
-        <div className="accordian_controller">
-          <Accordion allowZeroExpanded={false} className="accordion_container">
-            {items.map((item) => (
-              <AccordionItem key={item.id}>
-                <AccordionItemHeading>
-                  <AccordionItemButton className="question">
-                    {item.question}
-                  </AccordionItemButton>
-                </AccordionItemHeading>
-                <AccordionItemPanel>
-                  <p className="answer">{item.answer}</p>
-                </AccordionItemPanel>
-              </AccordionItem>
-            ))}
-          </Accordion>
-        </div>
+        <Accordion allowZeroExpanded={false} className="accordion_container">
+          {items.map((item) => (
+            <AccordionItem key={item.id}>
+              <AccordionItemHeading>
+                <AccordionItemButton className="question">
+                  {item.question}
+                </AccordionItemButton>
+              </AccordionItemHeading>
+              <AccordionItemPanel>
+                <p className="answer">{item.answer}</p>
+              </AccordionItemPanel>
+            </AccordionItem>
+          ))}
+        </Accordion>
       </div>
     </>
   );
