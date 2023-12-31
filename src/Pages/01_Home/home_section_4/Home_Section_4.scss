@@ -52,3 +52,12 @@
     }
   }
 }
+@media screen and (max-width: 290px) {
+  .home_section_4 {
+    .our_value_container {
+      & h1 {
+        font-size: $font_lg;
+      }
+    }
+  }
+}
