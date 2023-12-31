@@ -11,7 +11,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   height: fit-content;
   & h1 {
     font-family: $font_ubuntu;
@@ -19,6 +18,7 @@
     text-align: center;
     padding: 1rem;
   }
+
   & .accordion_container {
     width: fit-content;
     background: #28282bbd;

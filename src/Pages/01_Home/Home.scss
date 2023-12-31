@@ -6,12 +6,11 @@
 }
 .hero_section {
   height: fit-content;
-  background: blue;
+
   background: url("https://live.staticflickr.com/65535/53430993781_7cd5c304f0_c.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   height: 80vh;
   .text_div {
     background: transparent;
@@ -22,9 +21,10 @@
     & h1 {
       font-size: $font_4xl;
       text-align: center;
+      color: $bg_color;
       font-family: $font_ubuntu;
-      background: #ffffff4b;
-      backdrop-filter: blur(4px);
+      text-shadow: 0px 0px 8px #000;
+      background: #00000079;
     }
   }
 }

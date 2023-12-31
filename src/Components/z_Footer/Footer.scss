@@ -1,0 +1,64 @@
+@import "../../Variables_Styles/variable.scss";
+@import "../../Variables_Styles/fonts.scss";
+
+.footer_container {
+  background: #28282b;
+  height: fit-content;
+  padding: 5rem 0;
+  width: 100%;
+  height: fit-content;
+  & .footer_controller {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+
+    & .address {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 2rem;
+      & h1 {
+        color: $bg_color;
+        font-family: $font_ubuntu;
+      }
+      & p {
+        color: $bg_color;
+        font-size: $font_normal;
+        font-family: $font_ubuntu;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        &:hover {
+          opacity: 0.7;
+          transition: all 0.3s ease;
+        }
+      }
+    }
+    & .contact {
+      @extend .address;
+      & h1 {
+      }
+    }
+    & .footer_about {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+      & p {
+        font-size: $font_normal;
+        font-family: $font_ubuntu;
+        padding: 1rem;
+        color: $bg_color;
+      }
+      & .logos > h1 > a {
+        font-family: freehand;
+        color: $bg_color;
+        font-size: $font_lg;
+        padding: 1rem;
+        color: white !important;
+      }
+    }
+  }
+}
