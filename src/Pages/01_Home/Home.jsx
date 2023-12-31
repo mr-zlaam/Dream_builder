@@ -1,6 +1,7 @@
 import {} from "react";
 import "./Home.scss";
 import Home_Section_2 from "./home_section_2/Home_section_2";
+import Home_section_3 from "./home_section_3/home_section_3";
 const Home = () => {
   return (
     <>
@@ -11,6 +12,7 @@ const Home = () => {
           </div>
         </div>
         <Home_Section_2 />
+        <Home_section_3 />
       </div>
     </>
   );

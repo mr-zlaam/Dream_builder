@@ -1,0 +1,77 @@
+@import "../../../Variables_Styles/fonts.scss";
+@import "../../../Variables_Styles/variable.scss";
+
+.reviews {
+  margin: 1rem 0.4rem;
+  padding: 1rem 0;
+  user-select: none;
+  cursor: grab;
+  &:active {
+    cursor: grabbing;
+  }
+
+  & .review_txt {
+    font-family: $font_ubuntu;
+    text-align: center;
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+    cursor: default;
+  }
+  & .courasel {
+    & .review_card {
+      height: 250px;
+      width: 1fr;
+      margin: auto;
+      background: $card_bgColor;
+      color: $text_color;
+      padding: 0.4rem;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      margin: 0 1rem;
+      padding: 1rem 0;
+
+      & .five_star {
+        text-align: center;
+      }
+      & .name_profile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & .name {
+          font-family: $font_ubuntu;
+          font-weight: $font_heading;
+          margin: 0 0.8rem;
+        }
+        & .profile {
+          height: 45px;
+          width: 45px;
+          background: gray;
+          border-radius: 50%;
+          overflow: hidden;
+          & img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+          }
+        }
+      }
+      & .text_review {
+        overflow: auto;
+        height: 100%;
+        padding: 1rem;
+        font-family: $font_ubuntu;
+        font-size: large;
+        font-weight: $font_heading;
+        text-align: center;
+        letter-spacing: 1px;
+      }
+      &:hover {
+        background: $card_hover_bgColor;
+        color: $card_hover_color;
+        transition: all 0.3s ease;
+        border-radius: 20px;
+      }
+    }
+  }
+}

@@ -6,7 +6,7 @@
     text-align: center;
     font-family: $font_ubuntu;
     border-bottom: 2px solid black;
-    margin: 1rem;
+    margin: 1rem 14rem;
     padding: 0.5rem;
   }
 
@@ -16,7 +16,7 @@
     justify-content: center;
     align-items: center;
     & .card {
-      margin: 0.4rem;
+      margin: 0.8rem;
       height: 280px;
       background: #dbdbdb;
       color: $text_color;
@@ -24,8 +24,16 @@
       padding: 0.5rem;
       transition: all 0.3s ease;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
       align-items: center;
+      border-radius: 10px;
+      & .card_content {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+      }
       & .card_head {
         font-family: $font_ubuntu;
         text-align: center;
@@ -34,14 +42,35 @@
         @extend .card_head;
         font-weight: 500;
         margin: 0.5rem 0;
+        font-size: $font_normal;
+        letter-spacing: 1px;
       }
       &:hover {
         transition: all 0.3s ease;
         background: #28282b;
-        color: #daa520;
+        color: #ffd700;
         border-radius: 20px;
         cursor: pointer;
       }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .home_section_2 {
+    & .our_services {
+      margin: 1rem;
+    }
+    & .cards {
+    }
+  }
+}
+@media screen and (max-width: 338px) {
+  .home_section_2 {
+    & .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      justify-content: center;
+      align-items: center;
     }
   }
 }

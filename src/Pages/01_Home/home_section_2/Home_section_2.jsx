@@ -7,7 +7,7 @@ const Home_Section_2 = () => {
         <h1 className="our_services">What We Do ?</h1>
         <div className="cards">
           <div className="card ">
-            <div>
+            <div className="card_content">
               <h2 className="card_head">ARCHITECTURAL DESIGN</h2>
               <p className="card_body">
                 Buildings and constructions are an essential part of the human
@@ -16,7 +16,7 @@ const Home_Section_2 = () => {
             </div>
           </div>
           <div className="card ">
-            <div>
+            <div className="card_content">
               <h2 className="card_head">GREY STRUCTURE</h2>
               <p className="card_body">
                 Grey structure includes all the constructional processes
@@ -25,7 +25,7 @@ const Home_Section_2 = () => {
             </div>
           </div>
           <div className="card ">
-            <div>
+            <div className="card_content">
               <h2 className="card_head">BUILDING DRAWINGS</h2>
               <p className="card_body">
                 After architects finalize the concept drawings, we meticulously
@@ -35,7 +35,7 @@ const Home_Section_2 = () => {
             </div>
           </div>
           <div className="card ">
-            <div>
+            <div className="card_content">
               <h2 className="card_head">INTERIOR DESIGN</h2>
               <p className="card_body">
                 The goal of interior designers is to improve the user experience
