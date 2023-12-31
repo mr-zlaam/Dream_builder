@@ -1,0 +1,54 @@
+@import "../../../Variables_Styles/fonts.scss";
+@import "../../../Variables_Styles/variable.scss";
+
+.home_section_4 {
+  .our_value_txt {
+    text-align: center;
+    font-family: $font_ubuntu;
+    font-size: $font_xl;
+    font-weight: $font_heading;
+  }
+  .our_value_container {
+    background: url("https://live.staticflickr.com/65535/53431315119_5da5846f04_b.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & h4 {
+      font-family: $font_ubuntu;
+      color: $bg_color;
+      text-shadow: 0 0 8px #28282b;
+      margin: 1rem 0;
+      background: #28282b69;
+      padding: 1rem;
+      border-radius: 1rem;
+    }
+    & h1 {
+      background: none;
+      @extend h4;
+      font-size: $font_2xl;
+    }
+    & p {
+      @extend h4;
+      background: #28282b7c;
+      padding: 1rem;
+      font-size: $font_md;
+      letter-spacing: 1px;
+      line-height: 2rem;
+      border-radius: 1.4rem;
+    }
+  }
+}
+@media screen and (max-width: 838px) {
+  .home_section_4 {
+    .our_value_container {
+      & h1 {
+        font-size: $font_xl;
+      }
+    }
+  }
+}
