@@ -1,0 +1,58 @@
+@import "../../../Variables_Styles/fonts.scss";
+@import "../../../Variables_Styles/variable.scss";
+
+.home_section_5 {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("https://live.staticflickr.com/65535/53430993796_e31499eb52_b.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: fit-content;
+  & h1 {
+    font-family: $font_ubuntu;
+    font-size: $font_2xl;
+    text-align: center;
+    padding: 1rem;
+  }
+  & .accordion_container {
+    width: fit-content;
+    background: #28282bbd;
+    border-radius: 20px;
+    padding: 1rem;
+    width: 700px;
+  }
+}
+.question {
+  color: $bg_color;
+  font-family: $font_ubuntu;
+  font-size: $font_md;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  margin: -0.4rem;
+  cursor: pointer;
+}
+.answer {
+  @extend .question;
+  font-size: $font_normal;
+  letter-spacing: 1px;
+}
+@media screen and (max-width: 768px) {
+  .home_section_5 > .accordion_container {
+    width: 100%;
+  }
+  .question {
+    font-size: $font_normal;
+  }
+  .answer {
+    font-size: $font_sm;
+    letter-spacing: 1px;
+    width: 100%;
+    padding: 0;
+  }
+}

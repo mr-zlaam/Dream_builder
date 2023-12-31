@@ -2,27 +2,47 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
   & a {
     user-select: none;
+    -webkit-user-drag: none;
   }
 }
+
 @media screen and (max-width: 768px) {
   * {
     user-select: none;
     -webkit-user-drag: none;
   }
 }
-::-webkit-scrollbar-track {
-  background: #80808083;
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ddd #28282b;
+}
+
+/* Webkit-based browsers (Chrome, Safari, newer versions of Edge) */
+*::-webkit-scrollbar {
+  width: 10px; /* Adjust the width as needed */
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
   width: 50px;
 }
-::-webkit-scrollbar-thumb {
-  box-shadow: 2px 2px 4px #888888;
 
-  background-color: #fff;
-  width: 40px;
+*::-webkit-scrollbar-thumb {
+  background-color: #28282b;
   border-radius: 30px;
 }
-::-webkit-scrollbar {
-  height: 20px;
+
+/* Microsoft Edge and Internet Explorer */
+*::-ms-scrollbar-thumb {
+  width: 20px; /* Adjust the width as needed */
+}
+
+*::-ms-scrollbar-track {
+  background: #ffffff;
+  width: 50px;
 }
