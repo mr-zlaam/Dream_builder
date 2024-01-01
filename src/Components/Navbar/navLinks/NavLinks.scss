@@ -3,20 +3,75 @@
 .navLinks {
   font-family: $font_ubuntu;
   font-weight: 400;
-  & a {
-    text-decoration: none;
-    margin: 0 2rem;
-    font-size: $font_normal;
-    transition: all 0.4s linear;
-    padding-bottom: 0.4rem;
-    color: #000;
-    &:hover {
-      transition: all 0.4s linear;
-      opacity: 0.7;
-      transition: all 0.4s linear;
+
+  .services_route {
+    position: relative;
+    & .servicesText {
+      position: relative;
+      padding: 0.4rem 1rem;
+      & .drop_icon {
+        position: absolute;
+        right: 0;
+        bottom: 0.4rem;
+      }
     }
-    &:focus {
-      text-decoration: underline;
+    :focus {
+      text-decoration: none;
+    }
+    & .dropdown_controller {
+      transition: all 0.3s ease;
+      box-shadow: 0px 0px 1px #888888;
+      background: $bg_color;
+      position: absolute;
+      display: none;
+      height: fit-content;
+      left: 50%;
+      top: 5.5rem;
+      transform: translate(-50%, -50%);
+    }
+    &:hover {
+      transition: all 0.3s ease;
+      & .dropdown_controller {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        width: fit-content;
+
+        & a {
+          padding: 0.4rem 1rem;
+          text-transform: capitalize;
+          width: 100%;
+          text-align: center;
+          font-size: 1rem;
+
+          transition: all 0.3s ease;
+          &:hover {
+            background: blueviolet;
+            transition: all 0.3s ease;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  & span {
+    & a {
+      text-decoration: none;
+      margin: 0 2rem;
+      font-size: $font_normal;
+      transition: all 0.4s linear;
+      padding-bottom: 0.4rem;
+      color: #000;
+
+      &:hover {
+        transition: all 0.4s linear;
+        opacity: 0.7;
+        transition: all 0.4s linear;
+      }
+      &:focus {
+        text-decoration: underline;
+      }
     }
   }
 }

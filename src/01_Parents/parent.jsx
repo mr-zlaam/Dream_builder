@@ -1,7 +1,7 @@
 import {} from "react";
 import Navbar from "../Components/Navbar/Navbar";
 import Routers from "../Components/Routes/Routes";
-import Footer from "../Components/z_Footer/Footer";
+// import Footer from "../Components/z_Footer/Footer";
 
 const Parent = () => {
   return (
@@ -9,7 +9,7 @@ const Parent = () => {
       <div>
         <Navbar />
         <Routers />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   );
