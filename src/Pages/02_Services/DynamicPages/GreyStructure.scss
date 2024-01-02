@@ -41,6 +41,8 @@
     font-family: $font_ubuntu;
     letter-spacing: 1px;
     margin: 0.4rem;
+    font-size: $font_normal;
+    color: #3b3b3b;
   }
   & img {
     border-radius: 20px;
@@ -63,6 +65,7 @@
       letter-spacing: 2px;
       line-height: 1.5rem;
       font-size: 1rem;
+      color: #cecaca;
     }
   }
 }
