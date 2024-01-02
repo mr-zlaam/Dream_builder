@@ -20,20 +20,36 @@ const NavLinks = (props) => {
           <Link to={"/"}>Home</Link>
         </span>
         <span className="services_route">
-          <Link className="servicesText">
+          <Link to={"/services"} className="servicesText">
             Services <IoMdArrowDropdown className="drop_icon" />
           </Link>
           <span className="dropdown_controller">
-            <Link onClick={menuCloser} to={"/services"} className="dropdown">
+            <Link
+              onClick={menuCloser}
+              to={"/services/Architectural"}
+              className="dropdown"
+            >
               Architectural
             </Link>
-            <Link to={"/services"} onClick={menuCloser} className="dropdown">
+            <Link
+              to={"/services/GreyStructure"}
+              onClick={menuCloser}
+              className="dropdown"
+            >
               Grey Structure
             </Link>
-            <Link to={"/services"} onClick={menuCloser} className="dropdown">
+            <Link
+              to={"/services/BuildingDrawing"}
+              onClick={menuCloser}
+              className="dropdown"
+            >
               Building Drawing
             </Link>
-            <Link to={"/services"} onClick={menuCloser} className="dropdown">
+            <Link
+              to={"/services/Interior"}
+              onClick={menuCloser}
+              className="dropdown"
+            >
               Interior Design
             </Link>
           </span>

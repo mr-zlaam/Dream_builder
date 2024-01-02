@@ -7,13 +7,21 @@ import Blogs from "../../Pages/04_Blog/Blog";
 import Contact from "../../Pages/05_contacts/Contact";
 import About from "../../Pages/06_About.jsx/About";
 import Error from "../../Pages/07_Error/ErrorPage";
+import ArchitecturalPage from "../../Pages/02_Services/DynamicPages/ArchitecturalPage";
+import GreyStructure from "../../Pages/02_Services/DynamicPages/GrayStructurePage";
+import BuildingDrawing from "../../Pages/02_Services/DynamicPages/BuildingDrawingPages";
+import Interior from "../../Pages/02_Services/DynamicPages/InteriorDesign";
 
 const Routers = () => {
   return (
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/services" element={<Services />} />
+        <Route path="/services/" element={<Services />} />
+        <Route path="/services/Architectural" element={<ArchitecturalPage />} />
+        <Route path="/services/GreyStructure" element={<GreyStructure />} />
+        <Route path="/services/BuildingDrawing" element={<BuildingDrawing />} />
+        <Route path="/services/Interior" element={<Interior />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/about" element={<About />} />
         <Route path="/blog" element={<Blogs />} />

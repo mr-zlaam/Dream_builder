@@ -1,0 +1,112 @@
+@import "../../../Variables_Styles/fonts.scss";
+@import "../../../Variables_Styles/variable.scss";
+
+.grey_hero_section {
+  background: url("https://images.pexels.com/photos/4916124/pexels-photo-4916124.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10rem;
+  position: relative;
+  & h1 {
+    position: relative;
+    font-size: $font_2xl;
+    font-family: $font_ubuntu;
+    width: fit-content;
+    margin: auto;
+    font-weight: $font_heading;
+    color: white;
+    text-shadow: 0px 0px 5px #000;
+  }
+}
+.grey_structure_construction {
+  margin: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  & h1 {
+    font-family: $font_ubuntu;
+    font-weight: $font_heading;
+    font-size: $font_lg;
+    margin: 0.5rem;
+  }
+  & h2 {
+    font-family: $font_ubuntu;
+    margin: 0.5rem;
+  }
+  & h3 {
+    font-family: $font_ubuntu;
+  }
+  & p {
+    font-family: $font_ubuntu;
+    letter-spacing: 1px;
+    margin: 0.4rem;
+  }
+  & img {
+    border-radius: 20px;
+    width: 80%;
+  }
+}
+.investment_section {
+  width: 1fr;
+  .investment_card {
+    width: 100%;
+    background: #28282b;
+    color: $bg_color;
+    padding: 5rem 1rem;
+    & h1 {
+      font-family: $font_ubuntu;
+      margin: 0.5rem;
+    }
+    & h5 {
+      font-family: $font_ubuntu;
+      letter-spacing: 2px;
+      line-height: 1.5rem;
+      font-size: 1rem;
+    }
+  }
+}
+
+//media querry grey section
+
+@media screen and (max-width: 1024px) {
+  .grey_structure_construction {
+    margin: 1rem;
+    flex-direction: column;
+    & img {
+      width: 100%;
+    }
+  }
+}
+//media querry hero section
+@media screen and (max-width: 884px) {
+  .grey_hero_section {
+    padding: 5rem;
+    & h1 {
+      font-size: $font_xl;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .grey_hero_section {
+    padding: 3rem;
+    & h1 {
+      font-size: $font_lg;
+    }
+  }
+}
+
+@media screen and (max-width: 378px) {
+  .grey_hero_section {
+    padding: 2.5rem;
+    & h1 {
+      font-size: $font_md;
+    }
+  }
+}
+@media screen and (max-width: 250px) {
+  .main_grey_container {
+    visibility: hidden;
+    background: $bg_color;
+  }
+}

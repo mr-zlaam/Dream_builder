@@ -6,6 +6,9 @@
 
   .services_route {
     position: relative;
+    &:focus {
+      text-decoration: underline;
+    }
     & .servicesText {
       position: relative;
       padding: 0.4rem 1rem;
