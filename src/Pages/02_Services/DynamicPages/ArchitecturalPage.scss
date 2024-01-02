@@ -1,0 +1,118 @@
+@import "../../../Variables_Styles/fonts.scss";
+@import "../../../Variables_Styles/variable.scss";
+
+.arch_hero_section {
+  background: url("https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & h1 {
+    font-size: $font_2xl;
+    font-family: $font_ubuntu;
+    color: $bg_color;
+    text-shadow: 0px 0px 5px #28282b;
+  }
+}
+.arch_section_info {
+  background: #28282b;
+  color: $bg_color;
+  padding: 5rem 0;
+  & h1 {
+    font-family: $font_ubuntu;
+    text-align: center;
+
+    margin: 2rem;
+    font-size: $font_xl;
+  }
+  & .info_para_handler {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem 1rem;
+
+    & h2 {
+      font-family: $font_ubuntu;
+      font-size: $font_lg;
+      margin: 0.7rem;
+    }
+    & h6 {
+      font-size: $font_normal;
+      letter-spacing: 2px;
+      margin: 1rem;
+      font-family: $font_ubuntu;
+      color: #d4d1d1;
+    }
+  }
+}
+.arch_section_card {
+  .arch_cards_controller {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: #ececfa;
+  }
+  .arch_cards {
+    width: 1fr;
+    height: fit-content;
+    padding: 1rem;
+
+    & h1 {
+      font-family: $font_ubuntu;
+    }
+    & p {
+      font-family: $font_ubuntu;
+      font-size: $font_normal;
+      letter-spacing: 2px;
+      line-height: 1.5rem;
+      color: #28282b;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .arch_section_info {
+    h1 {
+      font-size: $font_lg;
+    }
+    & .info_para_handler {
+      flex-direction: column;
+      & h2 {
+        font-size: $font_md;
+      }
+    }
+  }
+  .arch_hero_section {
+    & h1 {
+      font-size: $font_xl;
+      text-align: center;
+      width: fit-content;
+      margin: auto;
+    }
+  }
+  .arch_section_card {
+    .arch_cards_controller {
+      flex-direction: column;
+    }
+  }
+}
+@media screen and (max-width: 468px) {
+  .arch_hero_section {
+    height: 30vh;
+    & h1 {
+      font-size: $font_lg;
+      text-align: center;
+      width: fit-content;
+      margin: auto;
+    }
+  }
+}
+@media screen and (max-width: 250px) {
+  .arch_container {
+    visibility: hidden;
+    background: $bg_color;
+  }
+}
