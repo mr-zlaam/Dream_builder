@@ -46,9 +46,7 @@ const NavLinks = (props) => {
         <span onClick={menuCloser}>
           <Link to={"/blog"}>Blogs</Link>
         </span>
-        <span onClick={menuCloser}>
-          <Link to={"/about"}>About</Link>
-        </span>
+
         <span onClick={menuCloser}>
           <Link to={"/contact"}>Contact</Link>
         </span>
