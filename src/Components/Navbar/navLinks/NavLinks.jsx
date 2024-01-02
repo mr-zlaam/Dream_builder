@@ -29,7 +29,7 @@ const NavLinks = (props) => {
               to={"/services/Architectural"}
               className="dropdown"
             >
-              Architectural
+              Architecture
             </Link>
             <Link
               to={"/services/GreyStructure"}
@@ -37,20 +37,6 @@ const NavLinks = (props) => {
               className="dropdown"
             >
               Grey Structure
-            </Link>
-            <Link
-              to={"/services/BuildingDrawing"}
-              onClick={menuCloser}
-              className="dropdown"
-            >
-              Building Drawing
-            </Link>
-            <Link
-              to={"/services/Interior"}
-              onClick={menuCloser}
-              className="dropdown"
-            >
-              Interior Design
             </Link>
           </span>
         </span>
