@@ -1,0 +1,82 @@
+@import "../../Variables_Styles/fonts.scss";
+@import "../../Variables_Styles/variable.scss";
+
+@mixin focus {
+  border-radius: 7px;
+  transition: all 0.3s ease;
+  box-shadow: inset 0px 0px 14px #888888;
+}
+@mixin inputCustomization {
+  border: none;
+  outline: 1px solid black;
+}
+.contact_container {
+  position: relative;
+  & .msg {
+    height: 20px;
+    width: 100%;
+    position: absolute;
+    top: 1rem;
+    text-align: center;
+    font-family: $font_ubuntu;
+    font-size: $font_sm;
+    font-weight: $font_heading;
+    & .success {
+      color: green;
+    }
+    & .error {
+      color: #fa3f3f;
+    }
+  }
+}
+.form_controll {
+  position: relative;
+  top: 2rem;
+  padding: 1rem;
+  max-width: 450px;
+  margin: 3rem auto;
+  & .input_controller {
+    display: flex;
+    flex-direction: column;
+    & label {
+      font-family: $font_ubuntu;
+      font-weight: $font_heading;
+    }
+    & input {
+      @extend label;
+      font-weight: normal;
+      padding: 0.5rem 1rem;
+      margin: 0.4rem 0;
+      font-size: $font_normal;
+      transition: all 0.3 linear;
+      @include inputCustomization;
+      &:focus {
+        @include focus;
+      }
+    }
+    ::placeholder {
+      font-size: $font_sm;
+      font-weight: $font_heading;
+    }
+    & textarea {
+      font-family: $font_ubuntu;
+      transition: all 0.3s linear;
+      @include inputCustomization;
+
+      padding: 1rem;
+      resize: none;
+      margin-bottom: 1rem;
+      font-size: $font_normal;
+      margin-top: 0.2rem;
+      &:focus {
+        @include focus;
+      }
+    }
+  }
+}
+@media screen and (max-width: 250px) {
+  .contact_container {
+    visibility: hidden;
+    background: $bg_color;
+  }
+}
