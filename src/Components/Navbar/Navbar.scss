@@ -12,6 +12,16 @@
 .logo > h1 > a {
   font-family: $font_logo;
   color: #000;
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+  & img {
+    width: 70px;
+    height: 100%;
+    position: relative;
+    top: 1rem;
+    object-fit: contain;
+  }
 }
 @media screen and (max-width: 768px) {
   .main_header {

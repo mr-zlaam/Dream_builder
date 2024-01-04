@@ -14,7 +14,9 @@ const Navbar = () => {
       <header className="main_header nav_shadow">
         <div className="logo">
           <h1>
-            <Link to={"/"}>DreamBuilders</Link>
+            <Link to={"/"}>
+              <img src="/logo.svg" alt="" width={90} />
+            </Link>
           </h1>
         </div>
         <div className="navLinks">
