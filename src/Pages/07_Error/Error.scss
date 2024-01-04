@@ -1,0 +1,25 @@
+@import "../../Variables_Styles/fonts.scss";
+@import "../../Variables_Styles/variable.scss";
+
+.error_container {
+  height: calc(100vh - 5.5rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+  & h1 {
+    font-family: $font_ubuntu;
+    margin: 2rem 0;
+    font-size: $font_xl;
+  }
+  & a {
+    color: blue;
+    @extend h1;
+    font-weight: $font_heading;
+    font-size: $font_xl;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
