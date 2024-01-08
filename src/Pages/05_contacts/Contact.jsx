@@ -22,9 +22,11 @@ const Contact = () => {
       return setErrorMsg("All fields are required !");
     if (!inputData.email.includes("@"))
       return setErrorMsg("🤢 Please Enter Valid Email Address");
-    setSuccessMsg("✔ Form Submitted Successfully");
-    setInputData("");
+    setSuccessMsg("✔ Message Sent Successfully");
+    window.location.reload();
+
     setTimeout(() => {
+      setInputData({ name: "", email: "", message: "" });
       setSuccessMsg("");
     }, 3000);
   };
